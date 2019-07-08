@@ -9,7 +9,6 @@
 
 function ccgen(){
 	init();
-	
 	$("#gerar").bind("click", function(){darkside(document.console.ccp.value,document.console.tr.value);showSave();});
 	$("#ccpN").bind("change", function(){fillter();});
 	$("#cleanText").bind("click", function(){cleanText();});
