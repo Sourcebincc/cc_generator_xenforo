@@ -5,6 +5,8 @@
 *
 * Open-Source Code </> 15-11-2017
 * https://t.me/MrBanker
+* [ Edit Css www.sourcebincc.com
+*      forum.sourcebincc.com     ]
 ****************************************/
 
 body{
@@ -20,13 +22,13 @@ header{
 .title{
 	font-size: 2rem;
 	padding: 15px;
-	font-family: "GeosansLight";
-
+	font-family: 'GeosansLight';
+	text-shadow: 0px 0px 15px #7EC7C0;
 	text-align: center;
 }
 .header-title {
 	background: #1a1a1a;
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'GeosansLight';
 	display: flex;
 	justify-content: flex-end;
 	padding: 1px;
@@ -85,7 +87,8 @@ form#console {
 	border-top: 1px solid #7EC7C0;
 	color: #7EC7C0;
 	border-color: #7EC7C0;
-	
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 38px rgba(126, 199, 192, .9);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 38px rgba(126, 199, 192, .9); 
 }
 .input_text {
 	padding: 6px;
@@ -94,7 +97,8 @@ form#console {
 	border-right: 1px solid #7EC7C0;
 	border-top: 1px solid #7EC7C0;
 	border-radius: 0 5px 5px 0;
-	
+	/* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 18px rgba(126, 199, 192, .9);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 18px rgba(126, 199, 192, .9);*/
 	vertical-align: bottom;
 	outline: none;
 	font-size:17px;
@@ -160,7 +164,8 @@ select.input_text {
 .Lbutton {
  border: 1px solid #7EC7C0;
 	color: #7EC7C0;
-	
+	/*-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 18px rgba(126, 199, 192, .9);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 18px rgba(126, 199, 192, .9);*/
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #232329), color-stop(1, #232329));
 	background:-moz-linear-gradient(top, #232329 5%, #232329 100%);
 	background:-webkit-linear-gradient(top, #232329 5%, #232329 100%);
@@ -174,7 +179,7 @@ select.input_text {
 	border-radius:6px;
 	display:inline-block;
 	cursor:pointer;
-	font-family:'Courier New';
+	font-family:'GeosansLight';
 	font-size:20px;
 	font-weight:bold;
 	padding:8px 40px;
@@ -197,7 +202,8 @@ select.input_text {
 .Lbutton:hover, .Lbutton:focus, .Lbutton:active, .Lbutton.active, .open > .dropdown-toggle.Lbutton{
 	color: #7EC7C0;
 	border-color: #7EC7C0;
-	
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 38px rgba(126, 199, 192, .9);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 38px rgba(126, 199, 192, .9);
 }
 
 /*Textarea*/
@@ -205,15 +211,16 @@ select.input_text {
 	background-color:#2B2B35;
 	border-bottom: 2px solid #2A203F;
 	border-color: #7EC7C0;
-	
+	/*-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 38px rgba(126, 199, 192, .9);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 38px rgba(126, 199, 192, .9);*/
 	width: 100%;
 	color:#ebebeb;
 	font-size: 16px;
 	margin-bottom: 10px;
 	outline: none;
-	font-family: GeosansLight;
+	font-family: 'GeosansLight';
 	overflow-x: hidden;
-	/*overflow-y: scroll;*/
+	overflow-y: scroll;
 }
 .textarea::-webkit-scrollbar {
 	width: 10px;
@@ -226,12 +233,13 @@ select.input_text {
 footer {
 	background-color: #232329;
 	border-color: #7EC7C0;
-	
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 38px rgba(126, 199, 192, .9);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 38px rgba(126, 199, 192, .9);
 	color:#7EC7C0;
  padding: 5px;
-	font-size: 13px;
+	font-size: 18px;
  text-align: center;
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'GeosansLight';
 }
 
 a {
@@ -304,20 +312,4 @@ a {
 	#menu-sub{
 		display:block !important;
 	}
-}
-/*Responsive Styles*/
-@media screen and (max-width : 760px){
-    /*Make dropdown links appear inline*/
-    ul {
-        position: static;
-        display: none;
-    }
-    /*Create vertical spacing*/
-    li {
-        margin-bottom: 1px;
-    }
-    /*Make all menu links full width*/
-    ul li, li a {
-        width: 100%;
-    }
 }
